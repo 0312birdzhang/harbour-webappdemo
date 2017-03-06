@@ -1,0 +1,157 @@
+{
+"frames": {
+	"i_abbot_holybook": {
+		"frame": {"x":33, "y":85, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_chest": {
+		"frame": {"x":60, "y":85, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_hannin_ghostlantern": {
+		"frame": {"x":83, "y":18, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_kappa_bubblegun": {
+		"frame": {"x":83, "y":9, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_magician_hakkestove": {
+		"frame": {"x":42, "y":85, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_physician_energyagent": {
+		"frame": {"x":51, "y":85, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_tengu_featherfan": {
+		"frame": {"x":83, "y":0, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_tennin_peach": {
+		"frame": {"x":69, "y":85, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"i_tennin_stoneseal": {
+		"frame": {"x":78, "y":85, "w":8, "h":8},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+		"sourceSize": {"w":8,"h":8}
+	},
+	"s_forest_ground_0": {
+		"frame": {"x":33, "y":66, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"s_forest_ground_1": {
+		"frame": {"x":66, "y":0, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"s_forest_ground_2": {
+		"frame": {"x":66, "y":17, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"s_forest_orn_0": {
+		"frame": {"x":50, "y":66, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"s_forest_orn_1": {
+		"frame": {"x":67, "y":51, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"s_interact_go_0": {
+		"frame": {"x":67, "y":68, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"s_interact_warning_0": {
+		"frame": {"x":66, "y":34, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"s_test_ground_0": {
+		"frame": {"x":0, "y":0, "w":32, "h":32},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"s_test_ground_1": {
+		"frame": {"x":0, "y":66, "w":32, "h":32},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"s_test_ground_2": {
+		"frame": {"x":33, "y":0, "w":32, "h":32},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"s_test_ground_3": {
+		"frame": {"x":33, "y":33, "w":32, "h":32},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"s_test_ground_4": {
+		"frame": {"x":0, "y":33, "w":32, "h":32},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	}
+
+},
+"meta": {
+	"image": "scene.png",
+	"size": {"w": 92, "h": 99},
+	"scale": "1"
+}
+}

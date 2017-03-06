@@ -1,0 +1,101 @@
+{
+"frames": {
+	"b_bat_0": {
+		"frame": {"x":17, "y":0, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"b_bat_1": {
+		"frame": {"x":17, "y":17, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"b_bat_2": {
+		"frame": {"x":34, "y":0, "w":16, "h":16},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	"b_fairy_a_0": {
+		"frame": {"x":17, "y":47, "w":12, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+		"sourceSize": {"w":12,"h":12}
+	},
+	"b_fairy_a_1": {
+		"frame": {"x":30, "y":47, "w":12, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+		"sourceSize": {"w":12,"h":12}
+	},
+	"b_fairy_b_0": {
+		"frame": {"x":43, "y":44, "w":12, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+		"sourceSize": {"w":12,"h":12}
+	},
+	"b_fairy_b_1": {
+		"frame": {"x":34, "y":31, "w":12, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+		"sourceSize": {"w":12,"h":12}
+	},
+	"b_hairbulb_0": {
+		"frame": {"x":34, "y":17, "w":13, "h":13},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+		"sourceSize": {"w":13,"h":13}
+	},
+	"b_walkmushroom_0": {
+		"frame": {"x":0, "y":39, "w":16, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":12},
+		"sourceSize": {"w":16,"h":12}
+	},
+	"b_walkmushroom_1": {
+		"frame": {"x":0, "y":26, "w":16, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":12},
+		"sourceSize": {"w":16,"h":12}
+	},
+	"b_walkmushroom_2": {
+		"frame": {"x":0, "y":13, "w":16, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":12},
+		"sourceSize": {"w":16,"h":12}
+	},
+	"b_walkmushroom_3": {
+		"frame": {"x":0, "y":0, "w":16, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":12},
+		"sourceSize": {"w":16,"h":12}
+	},
+	"b_walkmushroom_4": {
+		"frame": {"x":17, "y":34, "w":16, "h":12},
+		"rotated":false,
+		"trimmed":false,
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":12},
+		"sourceSize": {"w":16,"h":12}
+	}
+
+},
+"meta": {
+	"image": "foe.png",
+	"size": {"w": 56, "h": 60},
+	"scale": "1"
+}
+}

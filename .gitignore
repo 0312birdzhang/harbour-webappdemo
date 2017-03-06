@@ -1,0 +1,4 @@
+*.user
+*.pyc
+*.pyo
+*.o
