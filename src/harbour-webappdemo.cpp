@@ -28,10 +28,8 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#ifdef QT_QML_DEBUG
-#include <QtQuick>
-#endif
 
+#include <QtQuick>
 #include <sailfishapp.h>
 
 
@@ -40,6 +38,7 @@ int main(int argc, char *argv[])
     QGuiApplication* app = SailfishApp::application(argc, argv);
     QQuickView* view = SailfishApp::createView();
     QObject::connect(view->engine(), SIGNAL(quit()), app, SLOT(quit()));
+    view->setSource(SailfishApp::pathTo("qml/harbour-webappdemo.qml"));
     view->show();
     return app->exec();
 }

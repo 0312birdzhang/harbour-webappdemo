@@ -39,7 +39,7 @@ def scan(port):
     return flag
 
 def start():
-    os.chdir("/usr/share/harbour-littletouhou-arcade/qml/pages")
+    os.chdir("/usr/share/harbour-webappdemo/qml/pages")
     startport = randomport()
     pyotherside.send(startport)
     start_server(startport)
