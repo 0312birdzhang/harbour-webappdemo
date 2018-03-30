@@ -31,56 +31,21 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import QtWebKit 3.0
-import io.thp.pyotherside 1.3
 
 Page {
     id: page
 
-    Python{
-        id:imgpy
-         Component.onCompleted: {
-             console.log(app.port)
-             addImportPath(Qt.resolvedUrl('./'));
-             imgpy.importModule('scan',function () {
-                 imgpy.startScan();
-              });
-
-
-      }
-
-         function startScan(){
-             imgpy.call('scan.scanPort',[app.port],function(result){
-                       });
-         }
-
-      onReceived:{
-          console.log(data.toString())
-          if(data.toString() == "OK"){
-            busy.running = false;
-            //webview.url = "http://127.0.0.1:"+app.port+"/web/index.html"
-               var url = "http://127.0.0.1:"+app.port.toString()+"/web/index.html";
-              console.log(url)
-               webview.visible = true;
-              webview.url =url
-            console.log(webview.url)
-          }
-      }
-    }
-
-
     BusyIndicator {
         id:busy
-        running: true
         size: BusyIndicatorSize.Large
         anchors.centerIn: parent
     }
 
      WebView{
         id:webview
-        visible: false
         anchors.fill: parent
        // experimental.userAgent:"Qt; Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36  (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36"
-
+        url: "http://127.0.0.1:23333"
         Row {
                 id:footItem
                 spacing: Theme.paddingLarge
@@ -110,10 +75,10 @@ Page {
              id:label
              text:" A demo of web html5 test <br/>"+
                   " This html5 game is written by abshinri <br/>"+
+                  " This webserver backend use https://github.com/fffaraz/QtWebApp <br/>."+
                   " You can use this web server to run some html5 apps,"+
-                  "This app use 9527 port at first,if this port is used,it will"+
-                  " use port between 9000 and 50000.<br/>"+
-                  "Just have fun ;)"
+                  " This app use 23333 port at first<br/>"+
+                  " Just have fun ;)"
              wrapMode: Text.WordWrap
              anchors{
                  centerIn: parent

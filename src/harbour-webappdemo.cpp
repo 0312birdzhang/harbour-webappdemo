@@ -31,14 +31,57 @@
 
 #include <QtQuick>
 #include <sailfishapp.h>
+#include <QGuiApplication>
+#include <QDir>
+#include <QFile>
+#include "httplistener.h"
+#include "templatecache.h"
+#include "httpsessionstore.h"
+#include "requestmapper.h"
+#include "filelogger.h"
+#include "staticfilecontroller.h"
+
+using namespace stefanfrings;
+
+/** Cache for template files */
+TemplateCache* templateCache;
+
+/** Storage for session cookies */
+HttpSessionStore* sessionStore;
+
+/** Controller for static files */
+StaticFileController* staticFileController;
+
+/** Redirects log messages to a file */
+FileLogger* logger;
+
 
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication* app = SailfishApp::application(argc, argv);
+    QGuiApplication  app(argc,argv);
+    QString appname = "harbour-webappdemo";
+    app.setApplicationName(appname);
+    app.setOrganizationName("Sailor-CN");
+
+    // Find the configuration file
+    QString configFileName= "/usr/share/" + appname + "/"+ appname + ".ini";
+
+    // Configure static file controller
+    QSettings* fileSettings = new QSettings(configFileName,QSettings::IniFormat, &app);
+    fileSettings->beginGroup("docroot");
+    staticFileController = new StaticFileController(fileSettings, &app);
+
+    // Configure and start the TCP listener
+    QSettings* listenerSettings = new QSettings(configFileName,QSettings::IniFormat, &app);
+    listenerSettings->beginGroup("listener");
+    new HttpListener(listenerSettings,new RequestMapper(&app), &app);
+
+    qWarning("Application has started");
+
+
     QQuickView* view = SailfishApp::createView();
-    QObject::connect(view->engine(), SIGNAL(quit()), app, SLOT(quit()));
     view->setSource(SailfishApp::pathTo("qml/harbour-webappdemo.qml"));
     view->show();
-    return app->exec();
+    return app.exec();
 }

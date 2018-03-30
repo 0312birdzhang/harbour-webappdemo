@@ -14,7 +14,23 @@ TARGET = harbour-webappdemo
 
 CONFIG += sailfishapp
 
-SOURCES += src/harbour-webappdemo.cpp
+QT = core network
+
+SOURCES += src/harbour-webappdemo.cpp \
+    src/requestmapper.cpp \
+    src/controller/dumpcontroller.cpp \
+    src/controller/fileuploadcontroller.cpp \
+    src/controller/formcontroller.cpp \
+    src/controller/sessioncontroller.cpp \
+    src/controller/templatecontroller.cpp
+
+HEADERS += \
+    src/requestmapper.h \
+    src/controller/dumpcontroller.h \
+    src/controller/fileuploadcontroller.h \
+    src/controller/formcontroller.h \
+    src/controller/sessioncontroller.h \
+    src/controller/templatecontroller.h
 
 OTHER_FILES += qml/harbour-webappdemo.qml \
     qml/cover/CoverPage.qml \
@@ -22,10 +38,12 @@ OTHER_FILES += qml/harbour-webappdemo.qml \
     rpm/harbour-webappdemo.changes.in \
     rpm/harbour-webappdemo.spec \
     rpm/harbour-webappdemo.yaml \
+    harbour-webappdemo.ini \
     translations/*.ts \
     harbour-webappdemo.desktop
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
+
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -36,3 +54,14 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/harbour-webappdemo-de.ts
+
+
+config.path = /usr/share/harbour-webappdemo
+config.files = harbour-webappdemo.ini
+
+
+INSTALLS += config
+
+include(QtWebApp/logging/logging.pri)
+include(QtWebApp/httpserver/httpserver.pri)
+include(QtWebApp/templateengine/templateengine.pri)
